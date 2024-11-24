@@ -3,112 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Shop</title>
+    <title>Watchify | Your Premium Watch Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <header>
-        <div class="logo">BRAND LOGO AND TITLE</div>
+        <div class="logo">WATCHIFY</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
                 <li><a href="#">Men's Watches</a></li>
                 <li><a href="#">Digital Watches</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Page Section -->
-        <section class="home">
-            <h1>Featured Watches</h1>
-            <div class="grid">
-                <div class="product">
-                    <div class="image-placeholder">Image</div>
-                    <p>Product Name</p>
-                    <button>Buy Now</button>
-                </div>
-                <div class="product">
-                    <div class="image-placeholder">Image</div>
-                    <p>Product Name</p>
-                    <button>Buy Now</button>
-                </div>
-                <div class="product">
-                    <div class="image-placeholder">Image</div>
-                    <p>Product Name</p>
-                    <button>Buy Now</button>
-                </div>
-            </div>
-        </section>
+    <!-- Video as Background Section -->
+    <section id="home" class="video-section">
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="Cinematic Watch Product Video Commercial Example _ Rolex Timex Omega Samsung Apple Jewelry Amazon Ad.mp4" type="video/mp4">
+            </video>
+        </div>
+    <div class="video-content">
+        <h1>Discover Our Premium Watch</h1>
+        <button class="cta-button" onclick="scrollToSection('premium-watches')">Learn More</button>
+    </div>
+</section>
 
-        <!-- Men's Watch Section -->
-        <section class="product-page">
-            <h1>Men's Watch</h1>
-            <div class="product-info">
-                <div class="image-placeholder">Image</div>
-                <div class="description">
-                    <p>Description of the Men's Watch.</p>
-                    <button>Buy Now</button>
-                </div>
-            </div>
-            <div class="interactive-image">Interactive Image Placeholder</div>
-            <div class="reviews">
-                <h2>Reviews</h2>
-                <div class="review">Review 1</div>
-                <div class="review">Review 2</div>
-                <div class="review">Review 3</div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Watch</h1>
+            <p>Experience timeless elegance with our exclusive collection.</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
 
-        <!-- Digital Watch Section -->
-        <section class="product-page">
-            <h1>Digital Watches</h1>
-            <div class="grid">
-                <div class="product">
-                    <div class="image-placeholder">Image</div>
-                    <p>Product Name</p>
-                </div>
-                <div class="product">
-                    <div class="image-placeholder">Image</div>
-                    <p>Product Name</p>
-                </div>
-                <div class="product">
-                    
-                    <div class="image-placeholder">Image</div>
-                    <p>Product Name</p>
-                </div>
+    <!-- Featured Products Section -->
+    <section class="home">
+        <h2>Featured Watches</h2>
+        <div class="grid">
+            <div class="product">
+                <img src="image.png" alt="Watch 1" class="product-image">
+                <p>Luxury Gold Watch</p>
+                <p class="price">$299</p>
+                <button>Buy Now</button>
             </div>
-        </section>
-
-        <!-- Cart Section -->
-        <section class="cart">
-            <h1>Cart</h1>
-            <div class="cart-item">
-                <div class="image-placeholder">Image</div>
-                <div class="cart-description">
-                    <p>Product Description</p>
-                    <p>Price</p>
-                </div>
+            <div class="product">
+                <img src="image2.png" alt="Watch 2" class="product-image">
+                <p>Classic Leather Strap</p>
+                <p class="price">$199</p>
+                <button>Buy Now</button>
             </div>
-            <div class="cart-item">
-                <div class="image-placeholder">Image</div>
-                <div class="cart-description">
-                    <p>Product Description</p>
-                    <p>Price</p>
-                </div>
+            <div class="product">
+                <img src="image3.png" alt="Watch 3" class="product-image">
+                <p>Modern Digital Watch</p>
+                <p class="price">$149</p>
+                <button>Buy Now</button>
             </div>
-            <div class="cart-item">
-                <div class="image-placeholder">Image</div>
-                <div class="cart-description">
-                    <p>Product Description</p>
-                    <p>Price</p>
-                </div>
+        </div>
+        <h2></h2>
+        <h2>Sport Watches</h2>
+        <div class="grid">
+            <div class="product">
+                <img src="image.png" alt="Watch 1" class="product-image">
+                <p>Luxury Gold Watch</p>
+                <p class="price">$299</p>
+                <button>Buy Now</button>
             </div>
-            <button class="checkout">Checkout</button>
-        </section>
-    </main>
+            <div class="product">
+                <img src="image2.png" alt="Watch 2" class="product-image">
+                <p>Classic Leather Strap</p>
+                <p class="price">$199</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="image3.png" alt="Watch 3" class="product-image">
+                <p>Modern Digital Watch</p>
+                <p class="price">$149</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">WATCHIFY</div>
+            <p>&copy; 2024 Watchify. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
