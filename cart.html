@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Watchify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">WATCHIFY</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menswatch.html">Men's Watches</a></li>
+                <li><a href="digitalwatch.html">Smart Watches</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h1>Your Shopping Cart</h1>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luxury Gold Watch</td>
+                        <td>$299</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$299</td>
+                        <td><button class="remove-btn">Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>Classic Leather Strap</td>
+                        <td>$199</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$199</td>
+                        <td><button class="remove-btn">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <h2>Cart Summary</h2>
+                <p>Subtotal: $498</p>
+                <p>Tax: $49.80</p>
+                <p>Total: $547.80</p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">WATCHIFY</div>
+            <p>&copy; 2024 Watchify. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

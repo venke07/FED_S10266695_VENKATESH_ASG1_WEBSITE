@@ -56,7 +56,7 @@ header nav ul li a:hover {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
 }
 
 
@@ -72,29 +72,14 @@ header nav ul li a:hover {
     margin-bottom: 1rem;
     font-family: "Playfair Display", serif;
 }
-
 .hero-content p {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    background-color: black; /* Ensure the background is black */
+    color: white;
+    font-size: 1.5rem;
+    
 }
 
-.cta-button {
-    background: #ffd700;
-    color: #1e1e1e;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-.cta-button:hover {
-    background: #1e1e1e;
-    color: #ffd700;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
 /* Video Background */
 .video-section {
     position: relative;
@@ -137,24 +122,10 @@ header nav ul li a:hover {
 .cta-button {
     background: #ffd700;
     color: #1e1e1e;
-    padding: 1rem 2rem; /* Controls the size of the button */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    display: inline-flex; /* Enables better alignment control */
-    align-items: center; /* Centers vertically */
-    justify-content: center; /* Centers horizontally */
-    text-align: center; /* Ensures text is centered */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-    height:3rem; /* Allows dynamic sizing */
-    line-height: 1; /* Ensures no extra space around text */
-    margin-bottom: 1rem;
+    padding: 1rem 2rem
 }
-
 .cta-button:hover {
-    background: #1e1e1e;
+    background: black;
     color: #ffd700;
 }
 
@@ -166,6 +137,7 @@ header nav ul li a:hover {
 }
 
 .home h2 {
+    margin-top:  2rem;
     margin-bottom: 2rem;
     font-family: "Playfair Display", serif;
     font-size: 2rem;
@@ -349,15 +321,65 @@ footer ul li a:hover {
     font-size: 2.5rem;
     text-align: center;
     text-shadow: #b47705 3px 3px;
-}
-/* Watch Information Sections */
-.content, .content2 {
-    padding: 6rem 2rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    overflow: hidden;
+
 }
 
-.watch-info-container, .watch-info-container2 {
+.glitch {
+    font-size: 5rem; 
+    color: #ffffff;
+    animation: glitch 863ms infinite;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    15% {
+        text-shadow: -0.05em -.025em 0 rgba(255, 0, 0, .75), 0.025em 0.025em 0 rgba(0, 255, 0, .75), -0.05em -.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    49% {
+        text-shadow: -0.05em -.025em 0 rgba(255, 0, 0, .75), 0.025em 0.025em 0 rgba(0, 255, 0, .75), -0.05em -.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, .75), 0.05em 0 0 rgba(0, 255, 0, .75), 0 -0.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, .75), 0.05em 0 0 rgba(0, 255, 0, .75), 0 -0.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, .75), -0.025em -0.025em 0 rgba(0, 255, 0, .75), -0.025em -0.05em 0 rgba(0, 0, 255, .75);
+    }
+}
+
+.containerGlitch {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1175px;
+    height: auto;
+}
+
+
+
+                    
+/* Watch Information Sections */
+
+.watch-info-container{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -366,65 +388,25 @@ footer ul li a:hover {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease forwards;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
-.watch-info, .watch-info2 {
+.watch-info{
     flex: 1;
 }
-
-.watch-info h2, .watch-info2 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #1a1a1a;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    position: relative;
-}
-
-.watch-info h2::after, .watch-info2 h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #ffd700;
-    margin-top: 1rem;
-}
-
-.watch-info p, .watch-info2 p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #4a4a4a;
-    margin-bottom: 2rem;
-}
-
-.watch-info button, .watch-info2 button {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    background: #1a1a1a;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.watch-info button:hover, .watch-info2 button:hover {
-    background: #333;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.watch-image-container, .watch-image-container2 {
+.watch-image-container{
     flex: 1;
     position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .watch-image {
     width: 100%;
-    max-width: 500px;
-    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+   
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     transition: transform 0.5s ease;
@@ -453,50 +435,32 @@ footer ul li a:hover {
     font-weight: 700;
 }
 
-/* Watch Display */
-.watch-display {
-    margin-top: 20px;
-}
-
-.time, .date {
-    font-size: 2.5rem;
-    margin: 10px 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    color: #0ef;
-    text-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
-}
-
-.time {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.date {
-    font-size: 1.5rem;
-}
-
-/* Button */
-.button {
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: 2px solid #00d9ff;
+/* General Button Styles */
+button {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
     border-radius: 5px;
-    background: linear-gradient(145deg, #0f3460, #1a1a2e);
-    color: #00d9ff;
     cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: all 0.3s ease;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.button:hover {
-    background: linear-gradient(145deg, #1a1a2e, #0f3460);
-    box-shadow: 0 0 20px #00d9ff;
+/* Specific Styles for Buy Now Button */
+button.buy-now {
+    background: #ffd700;
+    color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+button.buy-now:hover {
+    background: #1e1e1e;
+    color: #ffd700;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -510,18 +474,18 @@ footer ul li a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 968px) {
-    .watch-info-container, .watch-info-container2 {
+@media (max-width: 800px) {
+    .watch-info-container{
         flex-direction: column;
         text-align: center;
         gap: 2rem;
     }
 
-    .watch-info h2::after, .watch-info2 h2::after {
+    .watch-info h2::after {
         margin: 1rem auto 0;
     }
 
-    .watch-info h2, .watch-info2 h2 {
+    .watch-info h2{
         font-size: 2rem;
     }
 
@@ -531,15 +495,243 @@ footer ul li a:hover {
 }
 
 @media (max-width: 480px) {
-    .content, .content2 {
+    .content{
         padding: 3rem 1rem;
     }
 
-    .watch-info h2, .watch-info2 h2 {
+    .watch-info h2 {
         font-size: 1.8rem;
     }
 
-    .watch-info p, .watch-info2 p {
+    .watch-info p {
         font-size: 1rem;
     }
+}
+/* Contact Us Section */
+.contact-us {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0f3460;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #0f3460;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #0f3460;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0d2c50;
+}
+
+/* Footer */
+footer {
+    background-color: #0f3460;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-content p {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+/* Hotline and Working Hours Section */
+.hotline-hours {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 2rem;
+}
+
+.hotline-hours h2, .hotline-hours h3 {
+    color: #0f3460;
+}
+
+.hotline-hours p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+/* Cart Section */
+.cart {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.cart h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0f3460;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.cart-table th, .cart-table td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #0f3460;
+    color: #fff;
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.cart-product-details {
+    text-align: left;
+}
+
+.cart-product-details p {
+    margin: 0;
+}
+
+.cart-table input[type="number"] {
+    width: 60px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #e60000;
+}
+
+.cart-summary {
+    text-align: left;
+}
+
+.cart-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.checkout-btn {
+    background-color: #0f3460;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #0d2c50;
 }
