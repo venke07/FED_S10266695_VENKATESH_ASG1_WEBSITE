@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Watchify</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Watchify | Store Location</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <header>
-        <div class="logo"><a href="index.html"> WATCHIFY   |</a></div>
+        <div class="logo"><a href="index.html">WATCHIFY</a></div>
         <nav>
             <ul>
                 <li><a href="menswatch.html">Men's Watches</a></li>
@@ -21,34 +21,17 @@
         </nav>
     </header>
 
-    <!-- Cart Section -->
-    <section class="cart">
-        <h1>Your Shopping Cart</h1>
-        <div class="cart-container">
-            <div class="table-responsive">
-                <table class="cart-table">
-                    <thead>
-                        <tr>
-                            <th>Image</th>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th>Remove</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Cart items will be dynamically inserted here -->
-                    </tbody>
-                </table>
+    <!-- Store Location Section -->
+    <section class="store-location white-text">
+        <div class="container">
+            <h1>Visit Our Store</h1>
+            <p>Our exclusive collection is available in-store only. Visit us at our location to explore the finest watches.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.838144825312!2d103.8519593153218!3d1.290270999058295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190f62b1e5b7%3A0x2f8f8f8f8f8f8f8f!2sMarina%20Bay%20Sands!5e0!3m2!1sen!2ssg!4v1633078471234!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="cart-summary">
-                <h2>Cart Summary</h2>
-                <p>Subtotal: $0.00</p>
-                <p>Tax: $0.00</p>
-                <p>Total: $0.00</p>
-                <button class="checkout-btn" onclick="window.location.href='payment.html'">Proceed to Checkout</button>
-            </div>
+            <p><strong>Address:</strong> <span>10 Bayfront Avenue, Singapore 018956</span></p>
+            <p><strong>Phone:</strong> +65 6688 8868</p>
+            <p><strong>Opening Hours:</strong> Mon - Fri: 10am - 9pm, Sat - Sun: 10am - 10pm</p>
         </div>
     </section>
 
@@ -64,6 +47,7 @@
             </ul>
         </div>
     </footer>
-    <script src="../script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>

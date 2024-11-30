@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Watchify</title>
+    <title>Receipt | Watchify</title>
     <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -21,34 +20,30 @@
         </nav>
     </header>
 
-    <!-- Cart Section -->
-    <section class="cart">
-        <h1>Your Shopping Cart</h1>
-        <div class="cart-container">
+    <!-- Receipt Section -->
+    <section class="receipt">
+        <h1>Receipt</h1>
+        <div class="receipt-container">
+            <p>Thank you for your purchase!</p>
+            <p id="order-number">Order Number: </p>
+            <p id="order-date">Date: </p>
+            <p id="order-total">Total: </p>
+            <h2>Order Details</h2>
             <div class="table-responsive">
-                <table class="cart-table">
+                <table class="receipt-table">
                     <thead>
                         <tr>
-                            <th>Image</th>
-                            <th>Product</th>
-                            <th>Price</th>
+                            <th>Item</th>
                             <th>Quantity</th>
-                            <th>Total</th>
-                            <th>Remove</th>
+                            <th>Price</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <!-- Cart items will be dynamically inserted here -->
+                    <tbody id="order-details">
+                        <!-- Order details will be populated here -->
                     </tbody>
                 </table>
             </div>
-            <div class="cart-summary">
-                <h2>Cart Summary</h2>
-                <p>Subtotal: $0.00</p>
-                <p>Tax: $0.00</p>
-                <p>Total: $0.00</p>
-                <button class="checkout-btn" onclick="window.location.href='payment.html'">Proceed to Checkout</button>
-            </div>
+            <button onclick="window.print()">Print Receipt</button>
         </div>
     </section>
 

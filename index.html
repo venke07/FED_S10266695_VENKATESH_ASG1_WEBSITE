@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchify | Your Premium Watch Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <header>
-        <div class="logo">WATCHIFY   |</div>
+        <div class="logo"><a href="index.html"> WATCHIFY   |</a></div>
         <nav>
             <ul>
-                <li><a href="#">Men's Watches</a></li>
-                <li><a href="#">Smart Watches</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="menswatch.html">Men's Watches</a></li>
+                <li><a href="Smartwatch.html">Smart Watches</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
@@ -25,67 +25,67 @@
     <section id="home" class="video-section">
         <div class="video-background">
             <video autoplay muted loop id="background-video">
-                <source src="Cinematic Watch Product Video Commercial Example _ Rolex Timex Omega Samsung Apple Jewelry Amazon Ad.mp4" type="video/mp4">
+                <source src="Video/Cinematic Watch Product Video Commercial Example _ Rolex Timex Omega Samsung Apple Jewelry Amazon Ad.mp4" type="video/mp4">
             </video>
         </div>
-    <div class="video-content">
-        <h1>Discover Our Premium Watch</h1>
-        <button class="cta-button" onclick="scrollToSection('premium-watches')">Learn More</button>
-    </div>
-</section>
+        <div class="video-content">
+            <h1>Discover Our Premium Watch</h1>
+            <button class="cta-button" onclick="scrollToSection('featured-products')">Learn More</button>
+        </div>
+    </section>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Find Your Perfect Watch</h1>
             <p>Experience timeless elegance with our exclusive collection.</p>
-            <button class="cta-button">Shop Now</button>
+            <button class="cta-button" onclick="scrollToSection('featured-products')">Shop Now</button>
         </div>
     </section>
-
+    
     <!-- Featured Products Section -->
-    <section class="home">
+    <section id="featured-products" class="home">
         <h2>Featured Watches</h2>
         <div class="grid">
             <div class="product">
-                <img src="image.png" alt="Watch 1" class="product-image">
+                <img src="../images/image.png" alt="Watch 1" class="product-image">
                 <p>Luxury Gold Watch</p>
                 <p class="price">$299</p>
-                <button>Buy Now</button>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="image2.png" alt="Watch 2" class="product-image">
-                <p>Classic Leather Strap</p>
+                <img src="../images/image2.png" alt="Watch 2" class="product-image">
+                <p>Tissot Le Locle Automatic</p>
                 <p class="price">$199</p>
-                <button>Buy Now</button>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="imagewatchnew.jpg" alt="Watch 3" class="product-image">
+                <img src="../images/imagewatchnew.jpg" alt="Watch 3" class="product-image">
                 <p>Heavy Duty Watch</p>
                 <p class="price">$149</p>
-                <button>Buy Now</button>
+                <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <h2></h2>
         <h2>Sport Watches</h2>
         <div class="grid">
             <div class="product">
-                <img src="watch1sport.jpeg" alt="Watch 1" class="product-image">
-                <p>Luxury Gold Watch</p>
+                <img src="../images/watch1sport.jpeg" alt="Watch 1" class="product-image">
+                <p>Garmin Forerunner 945</p>
                 <p class="price">$299</p>
-                <button>Buy Now</button>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="watch2sport.jpg" alt="Watch 2" class="product-image">
-                <p>Classic Leather Strap</p>
+                <img src="../images/watch2sport.jpg" alt="Watch 2" class="product-image">
+                <p>Suunto 9 Baro</p>
                 <p class="price">$199</p>
-                <button>Buy Now</button>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="watch3sport.jpg" alt="Watch 3" class="product-image">
-                <p>Modern Classic Watch</p>
+                <img src="../images/watch3sport.jpg" alt="Watch 3" class="product-image">
+                <p>Polar Vantage V2</p>
                 <p class="price">$149</p>
-                <button>Buy Now</button>
+                <button class="buy-now">Buy Now</button>
             </div>
         </div>
     </section>
@@ -96,11 +96,12 @@
             <div class="footer-logo">WATCHIFY</div>
             <p>&copy; 2024 Watchify. All rights reserved.</p>
             <ul class="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
             </ul>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

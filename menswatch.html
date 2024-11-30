@@ -4,78 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchify | Your Premium Watch Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <header>
-        <div class="logo">WATCHIFY</div>
+        <div class="logo"><a href="index.html"> WATCHIFY   |</a></div>
         <nav>
             <ul>
-                <li><a href="#">Men's Watches</a></li>
-                <li><a href="#">Smart Watches</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="menswatch.html">Men's Watches</a></li>
+                <li><a href="Smartwatch.html">Smart Watches</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Video Section -->
+    <!-- Video as Background Section -->
     <section id="home" class="video-section">
         <div class="video-background">
             <video autoplay muted loop id="background-video">
-                <source src="OOZOO WATCH COMMERCIAL - PRODUCT VIDEOGRAPHY.mp4" type="video/mp4">
+                <source src="Video/OOZOO WATCH COMMERCIAL - PRODUCT VIDEOGRAPHY.mp4" type="video/mp4">
             </video>
-            <!-- Overlay text div -->
-            <div class="video-overlay">
-                <h1>Men's Watches</h1>
-            </div>
+        </div>
+        <div class="video-content">
+            <h1>Men's Watches</h1>
+            <button class="cta-button" onclick="scrollToSection('featured-products')">Learn More</button>
         </div>
     </section>
 
     <!-- Featured Products Section -->
     <section class="home">
-        <h2>Featured Watches</h2>
+        <section id="featured-products" class="home"></section>
+        <h2>Elite Collection</h2>
         <div class="grid">
             <div class="product">
-                <img src="image.png" alt="Watch 1" class="product-image">
-                <p>Luxury Gold Watch</p>
-                <p class="price">$299</p>
-                <button>Buy Now</button>
+                <img src="images/Rolex-126610ln-black.jpg" alt="Watch 1" class="product-image">
+                <p>Rolex Submariner</p>
+                <p class="price">$8,100</p>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="image2.png" alt="Watch 2" class="product-image">
-                <p>Classic Leather Strap</p>
-                <p class="price">$199</p>
-                <button>Buy Now</button>
+                <img src="images/seamaster.jpg" alt="Watch 2" class="product-image">
+                <p>Omega Seamaster</p>
+                <p class="price">$5,200</p>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="imagewatchnew.jpg" alt="Watch 3" class="product-image">
-                <p>Heavy Duty Watch</p>
-                <p class="price">$149</p>
-                <button>Buy Now</button>
+                <img src="images/elitewatch.jpeg" alt="Watch 3" class="product-image">
+                <p>Tag Heuer Carrera</p>
+                <p class="price">$4,500</p>
+                <button class="buy-now">Buy Now</button>
             </div>
         </div>
-        <h2>Sport Watches</h2>
+        <h2>Rugged Collection</h2>
         <div class="grid">
             <div class="product">
-                <img src="watch1sport.jpeg" alt="Watch 1" class="product-image">
-                <p>Luxury Gold Watch</p>
-                <p class="price">$299</p>
-                <button>Buy Now</button>
+                <img src="images/OIP.jpeg" alt="Watch 1" class="product-image">
+                <p>Casio G-Shock Mudmaster</p>
+                <p class="price">$350</p>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="watch2sport.jpg" alt="Watch 2" class="product-image">
-                <p>Classic Leather Strap</p>
-                <p class="price">$199</p>
-                <button>Buy Now</button>
+                <img src="images/reggued.jpg" alt="Watch 2" class="product-image">
+                <p>Garmin Fenix 6X Pro</p>
+                <p class="price">$700</p>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="product">
-                <img src="watch3sport.jpg" alt="Watch 3" class="product-image">
-                <p>Modern Classic Watch</p>
-                <p class="price">$149</p>
-                <button>Buy Now</button>
+                <img src="images/opta-sw-008-smart-sport-watch-28military-grade-29-with-a-luminous-dial-compatible-with-android-and-ios-1000x1000.jpg" alt="Watch 3" class="product-image">
+                <p>Suunto Core All Black</p>
+                <p class="price">$300</p>
+                <button class="buy-now">Buy Now</button>
             </div>
         </div>
     </section>
@@ -84,10 +84,10 @@
         <div class="watch-info">
             <h2>Reach for the sky : Sky-King</h2>
             <p>Immediately recognizable with its large 3, 6 and 9 hour markers, combined with a prominent minutes scale, the Oyster Perpetual Air-King embodies the ties Rolex has forged with the world of aviation since the 1930s. Robust and precise, the watch pays tribute to the daring pioneers of airborne adventure. Its unique face recalls a shared history marked by records and achievements. Through this aeronautical inspiration, the Air-King encourages each of us to release our adventurous spirit and reach for the sky.</p>
-            <button class="buy-now">Buy Now</button>
+            <button class="store-link" onclick="window.location.href='shop.html'">Only available in store</button>
         </div>
         <div class="watch-image-container">
-            <img src="menswatchrolex1.jpg" alt="Watch Image" class="watch-image">
+            <img src="images/menswatchrolex1.jpg" alt="Watch Image" class="watch-image">
         </div>
     </div>
     
@@ -97,10 +97,10 @@
             <div class="watch-info">
                 <h2>7300/1200A Twenty~4 Automatic</h2>
                 <p>Patek Philippe has launched a brand new self-winding mechanical ladies’ watch, designed to set the pace of life in style for the modern, active woman. A new embodiment of feminine elegance, the Twenty~4 Automatic is the first model in the collection to feature a round case. The steel version with diamond-set bezel is available with a blue sunburst or gray sunburst dial with black gradation. The beating heart of the timepiece is the caliber 26-330 S C self-winding movement, which is visible through the sapphire crystal case back, displaying hours, minutes and sweep seconds, and the date in a small aperture at 6 o’clock.</p>
-                <button class="buy-now">Buy Now</button>
+                <button class="store-link" onclick="window.location.href='shop.html'">Only available in store</button>
             </div>
             <div class="watch-image-container">
-                <img src="watchforthemens.jpg" alt="Watch Image" class="watch-image">
+                <img src="images/watchforthemens.jpg" alt="Watch Image" class="watch-image">
             </div>
         </div>
     </section>
@@ -115,15 +115,47 @@
                     Featuring a sleek silver dial adorned with bold Arabic numerals and Super-LumiNova®-coated hands, the Spirit guarantees legibility in all conditions. The automatic movement, certified as a chronometer, ensures unparalleled precision—a tribute to Longines' rich history in aiding explorers and pioneers.
                     
                     </p>
-                <button class="buy-now">Buy Now</button>
+                <button class="store-link" onclick="window.location.href='shop.html'">Only available in store</button>
             </div>
             <div class="watch-image-container">
-                <img src="Longines-Spirit-37mm-2-1000x667.jpg" alt="Watch Image" class="watch-image">
+                <img src="images/Longines-Spirit-37mm-2-1000x667.jpg" alt="Watch Image" class="watch-image">
             </div>
         </div>
     </section>
-    
+    <!-- Review Section -->
+<section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-carousel">
+        <div class="review">
+            <p>"The Rolex Sky-King is an exceptional watch. Its precision and design are unmatched. Highly recommend!"</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="review">
+            <p>"The Patek Philippe Twenty~4 Automatic is a beautiful watch. It's elegant and perfect for any occasion."</p>
+            <p>- Jane Smith</p>
+        </div>
+        <div class="review">
+            <p>"The Longines Spirit 37mm is a timeless piece. Its accuracy and craftsmanship are outstanding."</p>
+            <p>- Mike Johnson</p>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">WATCHIFY</div>
+        <p>&copy; 2024 Watchify. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="../script.js"></script>
 </body>
 </html>
