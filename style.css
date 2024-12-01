@@ -1,14 +1,13 @@
 /* Logo Styling */
 .logo a {
-    color: white;
-    font-size: 2rem;
-    text-decoration: none;
+    color: white; /* Change this to your desired color */
+    font-size: 2rem; /* Adjust the font size as needed */
+    text-decoration: none; /* Remove underline */
 }
 
 .logo a:hover {
-    color: #ffd700;
+    color: #ffd700; /* Change this to your desired hover color */
 }
-
 /* General Styles */
 * {
     margin: 0;
@@ -26,11 +25,12 @@ body {
     color: #333;
     background-color: #f9f9f9;
     overflow-x: hidden;
-    padding-top: 80px; /* Avoid content being hidden behind fixed header */
-    overflow-y: auto;
+    padding-top: 80px; /* Add padding to avoid content being hidden behind fixed header */
+    overflow-y: auto; /* Ensure vertical scrolling is enabled */
 }
 
 /* Header */
+
 header {
     background-color: #1e1e1e;
     color: white;
@@ -38,17 +38,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: fixed; /* Make header fixed */
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 header .logo {
     font-family: "Playfair Display", serif;
-    font-size: 2rem;
+    font-size: 2rem; /* Ensure the logo size remains the same */
 }
+
 
 header nav ul {
     list-style: none;
@@ -69,39 +70,40 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; 
     color: white;
     text-align: center;
-    padding: 5rem 1rem;
+    padding: 5rem 1rem; /* Add padding for spacing */
 }
 
 .hero-content {
     padding: 2rem;
     border-radius: 10px;
     background-color: rgba(15, 52, 96, 0.8); /* Add transparency */
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Limit the width */
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Center the content */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #f9f9f9;
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.8; /* Increase line height for readability */
+    color: #f9f9f9; /* Lighten the text color */
     margin-bottom: 20px;
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #ffd700;
-    text-align: center;
+    font-size: 2.5rem; /* Add a heading with a larger font size */
+    margin-bottom: 1rem; /* Add some space below the heading */
+    color: #ffd700; /* Make the heading color stand out */
+    text-align: center; /* Center the heading text */
 }
 
 .cta-button {
@@ -120,12 +122,11 @@ header nav ul li a:hover {
     background-color: #1e1e1e;
     color: #ffd700;
 }
-
 /* Video Background */
 .video-section {
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 900px; /* Adjust height as needed */
     overflow: hidden;
 }
 
@@ -135,13 +136,13 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Keeps the video in the background */
 }
 
 #background-video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the video covers the section without stretching */
 }
 
 .video-content {
@@ -151,8 +152,8 @@ header nav ul li a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 1;
-    text-shadow: #333 0.3rem 0.3rem;
+    z-index: 1; /* Keeps content above the video */
+    text-shadow: #333   0.3rem 0.3rem ;
 }
 
 .video-content h1 {
@@ -160,6 +161,16 @@ header nav ul li a:hover {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
+.cta-button {
+    background: #ffd700;
+    color: #1e1e1e;
+    padding: 1rem 2rem
+}
+.cta-button:hover {
+    background: black;
+    color: #ffd700;
+}
+
 
 /* Products Section */
 .home {
@@ -168,7 +179,7 @@ header nav ul li a:hover {
 }
 
 .home h2 {
-    margin-top: 2rem;
+    margin-top:  2rem;
     margin-bottom: 2rem;
     font-family: "Playfair Display", serif;
     font-size: 2rem;
@@ -176,7 +187,7 @@ header nav ul li a:hover {
 
 .grid {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centers the items */
     gap: 1.5rem;
     flex-wrap: wrap;
 }
@@ -188,7 +199,7 @@ header nav ul li a:hover {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 300px; /* Set a consistent width for each product */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -201,9 +212,10 @@ header nav ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    aspect-ratio: 1/1;
-    object-fit: contain;
+    aspect-ratio: 1/1; /* Ensures square proportions */
+    object-fit: contain; /* Ensures images are properly contained */
     margin-bottom: 1rem;
+    src: url('images/firefox-icon.png'); /* Update image path */
 }
 
 .price {
@@ -269,7 +281,91 @@ footer {
     text-decoration: underline;
 }
 
-/* Video Overlay */
+.hero-content{
+    background-color: #1e1e1e;
+
+}
+.overlay {
+
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.scroll-button {
+    background: #ffd700;
+    color: #1e1e1e;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.scroll-button:hover {
+    background: #1e1e1e;
+    color: #ffd700;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+/* Men's Watches Section */
+.mens-watches-section {
+    padding: 3rem 2rem;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+.mens-watches-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+}
+
+.section-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+.mens-watches-section .grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.mens-watches-section .product {
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mens-watches-section .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 .video-overlay {
     position: absolute;
     top: 50%;
@@ -279,10 +375,11 @@ footer {
     font-size: 2.5rem;
     text-align: center;
     text-shadow: #b47705 3px 3px;
+
 }
 
 .glitch {
-    font-size: 5rem;
+    font-size: 5rem; 
     color: #ffffff;
     animation: glitch 863ms infinite;
     font-weight: 700;
@@ -298,21 +395,27 @@ footer {
     0% {
         text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
     }
+
     14% {
         text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
     }
+
     15% {
         text-shadow: -0.05em -.025em 0 rgba(255, 0, 0, .75), 0.025em 0.025em 0 rgba(0, 255, 0, .75), -0.05em -.05em 0 rgba(0, 0, 255, .75);
     }
+
     49% {
         text-shadow: -0.05em -.025em 0 rgba(255, 0, 0, .75), 0.025em 0.025em 0 rgba(0, 255, 0, .75), -0.05em -.05em 0 rgba(0, 0, 255, .75);
     }
+
     50% {
         text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, .75), 0.05em 0 0 rgba(0, 255, 0, .75), 0 -0.05em 0 rgba(0, 0, 255, .75);
     }
+
     99% {
         text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, .75), 0.05em 0 0 rgba(0, 255, 0, .75), 0 -0.05em 0 rgba(0, 0, 255, .75);
     }
+
     100% {
         text-shadow: -0.025em 0 0 rgba(255, 0, 0, .75), -0.025em -0.025em 0 rgba(0, 255, 0, .75), -0.025em -0.05em 0 rgba(0, 0, 255, .75);
     }
@@ -325,8 +428,11 @@ footer {
     height: auto;
 }
 
+
+                    
 /* Watch Information Sections */
-.watch-info-container {
+
+.watch-info-container{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -339,11 +445,10 @@ footer {
     margin-top: 2.5rem;
 }
 
-.watch-info {
+.watch-info{
     flex: 1;
 }
-
-.watch-image-container {
+.watch-image-container{
     flex: 1;
     position: relative;
     margin-top: 5rem;
@@ -354,15 +459,15 @@ footer {
     width: 100%;
     max-width: 400px;
     max-height: 400px;
+   
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     transition: transform 0.5s ease;
 }
 
 .watch-image:hover {
-    transform: scale(1.25);
+    transform: scale(1.25) ; 
 }
-
 /* Container */
 .container {
     text-align: center;
@@ -409,7 +514,6 @@ button.buy-now:hover {
     color: #ffd700;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
-
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -424,7 +528,7 @@ button.buy-now:hover {
 
 /* Responsive Design */
 @media (max-width: 800px) {
-    .watch-info-container {
+    .watch-info-container{
         flex-direction: column;
         text-align: center;
         gap: 2rem;
@@ -434,7 +538,7 @@ button.buy-now:hover {
         margin: 1rem auto 0;
     }
 
-    .watch-info h2 {
+    .watch-info h2{
         font-size: 2rem;
     }
 
@@ -444,7 +548,7 @@ button.buy-now:hover {
 }
 
 @media (max-width: 480px) {
-    .content {
+    .content{
         padding: 3rem 1rem;
     }
 
@@ -455,4 +559,549 @@ button.buy-now:hover {
     .watch-info p {
         font-size: 1rem;
     }
+}
+/* Contact Us Section */
+.contact-us {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0f3460;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #0f3460;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #0f3460;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0d2c50;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hotline and Working Hours Section */
+.hotline-hours {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 2rem;
+}
+
+.hotline-hours h2, .hotline-hours h3 {
+    color: #0f3460;
+}
+
+.hotline-hours p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+/* Cart Section */
+.cart h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0f3460;
+    text-align: center;
+}
+.cart {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cart-container {
+    width:70%;
+    margin: 0 auto;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.cart-table th {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.cart-table td img.cart-product-image {
+    width: 170px; 
+    height: auto;
+}
+
+.cart-table td input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+.cart-summary {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.cart-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.checkout-btn {
+    background-color: #ffd700;
+    color: #1e1e1e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.checkout-btn:hover {
+    background-color: #1e1e1e;
+    color: #ffd700;
+}
+
+/* Review Section */
+.reviews {
+
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.review-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.review {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.review p:last-child {
+    font-size: 1rem;
+    color: #555;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.payment {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-container {
+    padding: 20px;
+}
+
+.payment-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-container button:hover {
+    background-color: #555;
+}
+
+.receipt {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.receipt-container {
+    padding: 20px;
+}
+
+.receipt-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.receipt-container h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.receipt-table th, .receipt-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.receipt-table th {
+    background-color: #f2f2f2;
+}
+
+.receipt-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.receipt-container button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    width: 100%;
+    bottom: 0;
+}
+
+footer .footer-logo {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .transaction-history-container {
+        padding: 1rem;
+    }
+
+    .transaction-table th, .transaction-table td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .watch-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .watch-info, .watch-image-container {
+        flex: none;
+        width: 100%;
+    }
+
+    .watch-image {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .cart-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .cart-table th, .cart-table td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .cart-summary {
+        padding: 1rem;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .review-carousel {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    .contact-form-container {
+        padding: 1rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .hotline-hours p {
+        font-size: 1rem;
+    }
+
+    .store-location .container {
+        padding: 1rem;
+    }
+
+    .store-location iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .store-location p {
+        font-size: 1rem;
+    }
+}
+
+footer .social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button.store-link {
+    background: #ffd700;
+    color: #1e1e1e;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button.store-link:hover {
+    background: #1e1e1e;
+    color: #ffd700;
+}
+
+
+
+.white-text {
+    color: white;
+}
+
+.store-location p {
+    margin-bottom: 1.5rem;
+}
+
+.store-location h1 {
+    margin-bottom: 1.5rem;
+}
+
+.store-location .map-container {
+    margin-bottom: 1.5rem;
 }
