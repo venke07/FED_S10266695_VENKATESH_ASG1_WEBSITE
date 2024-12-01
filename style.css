@@ -244,33 +244,41 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
 }
 
-footer .footer-content {
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
-footer ul {
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-links {
     list-style: none;
+    padding: 0;
     display: flex;
-    gap: 1rem;
+    gap: 10px;
 }
 
-footer ul li a {
-    color: white;
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-footer ul li a:hover {
-    color: #ffd700;
+.social-links a:hover {
+    text-decoration: underline;
 }
 
 .hero-content{
@@ -419,7 +427,6 @@ footer ul li a:hover {
     max-width: 1175px;
     height: auto;
 }
-
 
 
                     
@@ -618,10 +625,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
 }
 
 .footer-content {
@@ -633,19 +637,16 @@ footer {
 }
 
 .footer-logo {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.footer-content p {
-    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .social-links {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 1rem;
+    gap: 10px;
 }
 
 .social-links li {
@@ -655,12 +656,12 @@ footer {
 .social-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
 .social-links a:hover {
     text-decoration: underline;
 }
+
 /* Hotline and Working Hours Section */
 .hotline-hours {
     padding: 2rem;
@@ -678,7 +679,6 @@ footer {
     color: #333;
     margin: 0.5rem 0;
 }
-/* Cart Section */
 /* Cart Section */
 .cart h1 {
     font-size: 2.5rem;
@@ -715,7 +715,7 @@ footer {
 }
 
 .cart-table td img.cart-product-image {
-    width: 170px; /* Adjust the width as needed */
+    width: 170px; 
     height: auto;
 }
 
@@ -928,7 +928,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative; /* Change from fixed to relative */
+    position: relative; 
     width: 100%;
     bottom: 0;
 }
