@@ -1,12 +1,12 @@
 /* Logo Styling */
 .logo a {
-    color: white; /* Change this to your desired color */
-    font-size: 2rem; /* Adjust the font size as needed */
-    text-decoration: none; /* Remove underline */
+    color: white;  
+    font-size: 2rem; 
+    text-decoration: none; 
 }
 
 .logo a:hover {
-    color: #ffd700; /* Change this to your desired hover color */
+    color: #ffd700; 
 }
 /* General Styles */
 * {
@@ -25,8 +25,8 @@ body {
     color: #333;
     background-color: #f9f9f9;
     overflow-x: hidden;
-    padding-top: 80px; /* Add padding to avoid content being hidden behind fixed header */
-    overflow-y: auto; /* Ensure vertical scrolling is enabled */
+    padding-top: 80px; 
+    overflow-y: auto;
 }
 
 /* Header */
@@ -38,16 +38,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Make header fixed */
+    position: fixed; 
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-}
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+} 
 
 header .logo {
     font-family: "Playfair Display", serif;
-    font-size: 2rem; /* Ensure the logo size remains the same */
+    font-size: 2rem; 
 }
 
 
@@ -73,17 +73,17 @@ header nav ul li a:hover {
     background-color: #1e1e1e; 
     color: white;
     text-align: center;
-    padding: 5rem 1rem; /* Add padding for spacing */
+    padding: 5rem 1rem;
 }
 
 .hero-content {
     padding: 2rem;
     border-radius: 10px;
-    background-color: rgba(15, 52, 96, 0.8); /* Add transparency */
-    max-width: 800px; /* Limit the width */
-    margin: 0 auto; /* Center the content */
-    text-align: center; /* Center the content */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    background-color: rgba(15, 52, 96, 0.8);
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .hero-content h1 {
@@ -93,17 +93,17 @@ header nav ul li a:hover {
 }
 
 .hero-content p {
-    font-size: 1.2rem; /* Adjust font size */
-    line-height: 1.8; /* Increase line height for readability */
-    color: #f9f9f9; /* Lighten the text color */
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    color: #f9f9f9; 
     margin-bottom: 20px;
 }
 
 .hero-content h2 {
-    font-size: 2.5rem; /* Add a heading with a larger font size */
-    margin-bottom: 1rem; /* Add some space below the heading */
-    color: #ffd700; /* Make the heading color stand out */
-    text-align: center; /* Center the heading text */
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: #ffd700; 
+    text-align: center; 
 }
 
 .cta-button {
@@ -126,7 +126,7 @@ header nav ul li a:hover {
 .video-section {
     position: relative;
     width: 100%;
-    height: 900px; /* Adjust height as needed */
+    height: 900px; 
     overflow: hidden;
 }
 
@@ -136,13 +136,13 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Keeps the video in the background */
+    z-index: -1; 
 }
 
 #background-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the section without stretching */
+    object-fit: cover; 
 }
 
 .video-content {
@@ -152,7 +152,7 @@ header nav ul li a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 1; /* Keeps content above the video */
+    z-index: 1; 
     text-shadow: #333   0.3rem 0.3rem ;
 }
 
@@ -187,7 +187,7 @@ header nav ul li a:hover {
 
 .grid {
     display: flex;
-    justify-content: center; /* Centers the items */
+    justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
 }
@@ -199,7 +199,7 @@ header nav ul li a:hover {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Set a consistent width for each product */
+    width: 300px; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -212,10 +212,10 @@ header nav ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    aspect-ratio: 1/1; /* Ensures square proportions */
-    object-fit: contain; /* Ensures images are properly contained */
+    aspect-ratio: 1/1; 
+    object-fit: contain; 
     margin-bottom: 1rem;
-    src: url('images/firefox-icon.png'); /* Update image path */
+
 }
 
 .price {
@@ -377,7 +377,7 @@ footer {
     text-shadow: #b47705 3px 3px;
 
 }
-
+/* Glitch Sections */
 .glitch {
     font-size: 5rem; 
     color: #ffffff;
@@ -427,11 +427,8 @@ footer {
     max-width: 1175px;
     height: auto;
 }
-
-
                     
 /* Watch Information Sections */
-
 .watch-info-container{
     max-width: 1200px;
     margin: 0 auto;
